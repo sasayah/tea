@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ティーちゃんを助けてください - 緊急輸血ドナー犬募集</title>
+  <meta name="description" content="愛犬ティーちゃんが免疫介在性溶血性貧血(IMHA)と闘っています。輸血のためのドナー犬を探しています。大型犬の飼い主さん、どうかお力を貸してください。">
+  <meta property="og:title" content="ティーちゃんを助けてください - 緊急輸血ドナー犬募集">
+  <meta property="og:description" content="愛犬ティーちゃんがIMHAと闘っています。輸血ドナー犬を探しています。">
+  <!-- TODO: デプロイ後にドメインに合わせて絶対URLに変更 例: https://your-domain.com/images/og-image.jpg -->
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ティーちゃんを助けてください - 緊急輸血ドナー犬募集">
+  <meta name="twitter:description" content="愛犬ティーちゃんがIMHAと闘っています。輸血ドナー犬を探しています。">
+  <meta name="twitter:image" content="images/og-image.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Noto Sans JP', 'sans-serif'],
+          },
+          colors: {
+            warm: {
+              50: '#fdf8f4',
+              100: '#faeee2',
+              200: '#f5d9c0',
+              300: '#e8b88a',
+              400: '#d4915a',
+              500: '#c47a3f',
+              600: '#b66434',
+              700: '#974e2c',
+              800: '#7a4029',
+              900: '#643624',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-gradient {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    }
+    .timeline-line::before {
+      content: '';
+      position: absolute;
+      left: 1.25rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #e8b88a;
+    }
+    @media (min-width: 768px) {
+      .timeline-line::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-warm-50">
+
+  <!-- フローティングCTAボタン（モバイル） -->
+  <div class="fixed bottom-4 left-4 right-4 z-50 md:hidden">
+    <a href="#contact" class="block w-full bg-red-600 hover:bg-red-700 text-white text-center font-bold py-3 px-6 rounded-full shadow-lg transition-colors">
+      <span class="block text-sm font-normal mb-0.5">大型犬・健康な8歳以下</span>
+      ご協力いただける方はこちら
+    </a>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- 1. ヒーローセクション -->
+  <!-- ============================================ -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <img src="images/いつものみつめてくる顔.jpg" alt="ティーちゃん" class="absolute inset-0 w-full h-full object-cover">
+    <div class="hero-gradient absolute inset-0"></div>
+    <div class="relative z-10 text-center px-4 py-20 max-w-2xl mx-auto">
+      <p class="inline-block bg-red-600 text-white text-sm font-bold px-4 py-1 rounded-full mb-6 tracking-wide">緊急のお願い</p>
+      <h1 class="text-4xl md:text-5xl font-black text-white leading-tight mb-4 drop-shadow-lg">
+        ティーちゃんを<br>助けてください
+      </h1>
+      <p class="text-lg md:text-xl text-white/90 mb-8 drop-shadow leading-relaxed">
+        愛犬が重い貧血と闘っています。<br>
+        輸血のための<span class="font-bold text-white">ドナー犬</span>を探しています。
+      </p>
+      <a href="#contact" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-colors mb-8">
+        ご協力いただける方はこちら
+      </a>
+      <div class="text-white/70 text-base leading-loose">
+        <p>笹谷靖</p>
+        <p>笹谷多何子</p>
+        <p>笹谷拓</p>
+        <p>笹谷実南</p>
+      </div>
+    </div>
+    <!-- スクロールヒント -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+      <svg class="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 2. ティーちゃんの紹介 -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-black text-center mb-4 text-warm-800">ティーちゃんのこと</h2>
+      <p class="text-center text-warm-600 mb-10 text-lg">トイプードル / 2021年生まれ / 女の子</p>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-10">
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/お腹撫でてのポーズ.jpg" alt="お腹撫でてのポーズ" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/いつも咥えている人形.jpg" alt="いつも咥えている人形" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/あくび.JPG" alt="あくび" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/好きな人形ボックス.JPG" alt="好きな人形と一緒に" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/散歩中に葉っぱを咥えている.JPG" alt="お散歩中" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/のびー.jpg" alt="のびー" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+
+      <div class="bg-warm-50 rounded-2xl p-6 md:p-8 mb-10">
+        <p class="text-lg leading-relaxed text-warm-800">
+          ティーちゃんは、家族にとにかく<span class="font-bold">甘えん坊</span>な子です。
+          お散歩も好きだけど、帰り道に家が見えるとダッシュで帰ろうとするくらい、<span class="font-bold">おうちが大好き</span>。
+          家族以外にはちょっと怖がりで、家の中にもいまだに怖くて入れない部屋があるほど。
+          お姉ちゃん犬のアンちゃんと一緒に、毎日のんびり暮らしていました。
+        </p>
+      </div>
+
+      <!-- 家族との写真 -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/家族写真.jpg" alt="桜の下で家族と" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/家族写真2.JPG" alt="家族みんなで" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/海ほたる.jpg" alt="海ほたるにて" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl">
+          <img src="images/誕生日.JPG" alt="誕生日のお祝い" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+        </div>
+      </div>
+
+      <!-- 日常の動画 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <div class="aspect-[9/16] md:aspect-video rounded-2xl overflow-hidden bg-gray-100">
+            <iframe src="https://www.youtube.com/embed/hMCGq04jRHw" title="ソファに登る意味のない助走準備" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <p class="text-sm text-warm-600 mt-2 text-center">ソファに登る前の、意味のない助走準備</p>
+        </div>
+        <div>
+          <div class="aspect-video rounded-2xl overflow-hidden bg-gray-100">
+            <iframe src="https://www.youtube.com/embed/TPAIcsierSs" title="部屋は怖いけど、おもちゃを取りに来た" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <p class="text-sm text-warm-600 mt-2 text-center">怖い部屋だけど、おもちゃを取りに来た</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 3. 何が起きたか（タイムライン） -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-24 bg-warm-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-black text-center mb-4 text-warm-800">何が起きたか</h2>
+      <p class="text-center text-warm-600 mb-12 text-lg">突然の発症から、わずか2日で命の危機に</p>
+
+      <div class="space-y-8">
+        <!-- 3/14 -->
+        <div class="relative flex gap-4 md:gap-8">
+          <div class="flex-shrink-0 w-10 h-10 bg-warm-300 rounded-full flex items-center justify-center z-10">
+            <span class="text-white font-bold text-xs">3/14</span>
+          </div>
+          <div class="bg-white rounded-2xl p-5 shadow-sm flex-1">
+            <h3 class="font-bold text-warm-800 mb-1">異変に気づく</h3>
+            <p class="text-gray-600">変な咳をするようになり、いつもより元気がない。明日病院に行こうと思っていました。</p>
+          </div>
+        </div>
+
+        <!-- 3/15 -->
+        <div class="relative flex gap-4 md:gap-8">
+          <div class="flex-shrink-0 w-10 h-10 bg-warm-500 rounded-full flex items-center justify-center z-10">
+            <span class="text-white font-bold text-xs">3/15</span>
+          </div>
+          <div class="bg-white rounded-2xl p-5 shadow-sm flex-1">
+            <h3 class="font-bold text-red-700 mb-1">IMHA（免疫介在性溶血性貧血）と診断</h3>
+            <p class="text-gray-600 mb-3">
+              朝の散歩で<span class="font-bold text-red-700">血尿</span>が出て、急いで病院へ。
+              検査の結果、<span class="font-bold">PCV（赤血球の割合）が26.1%</span>まで低下していることが判明。
+              自分の免疫が赤血球を壊してしまう病気「IMHA」と診断され、即入院になりました。
+            </p>
+            <div class="bg-red-50 border border-red-100 rounded-xl p-3">
+              <p class="text-sm text-red-800"><span class="font-bold">IMHAとは：</span>自分の免疫システムが、自分の赤血球を異物と勘違いして壊してしまう病気です。治療薬はありますが、効果が出るまで1〜2週間かかります。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3/16 -->
+        <div class="relative flex gap-4 md:gap-8">
+          <div class="flex-shrink-0 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center z-10">
+            <span class="text-white font-bold text-xs">3/16</span>
+          </div>
+          <div class="bg-white rounded-2xl p-5 shadow-sm flex-1 ring-2 ring-red-200">
+            <h3 class="font-bold text-red-700 mb-1">PCVが7.9%に急落 ― 緊急輸血</h3>
+            <p class="text-gray-600 mb-3">
+              面会時間前に病院から電話。PCVが想定外の<span class="font-bold text-red-700">7.9%</span>にまで下がり、緊急で輸血の準備に入っていると。
+              急いで病院に駆けつけると、ティーちゃんは呼びかけると目は開けるものの、<span class="font-bold">立ち上がることができない状態</span>でした。
+            </p>
+            <p class="text-gray-600 mb-3">
+              善意で登録されていたドナー犬のおかげで輸血を受けることができ、午後には立ち上がれるまで回復。
+              夜間対応ができる病院（ライフメイト動物医療センター文京）に、酸素を吸わせながら車で転院しました。
+            </p>
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-3">
+              <p class="text-sm text-amber-900"><span class="font-bold">今の状況：</span>治療薬の効果が出るまでの1〜2週間、輸血で命をつなぐ必要があります。病院のドナーだけでは足りず、私たち家族でもドナーを探しています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 4. 治療の様子（YouTube動画） -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-black text-center mb-4 text-warm-800">治療の記録</h2>
+      <p class="text-center text-warm-600 mb-12 text-lg">輸血のおかげで少しずつ元気を取り戻していますが、薬が効いてくるまでまだまだ輸血が必要です</p>
+
+      <div class="space-y-10">
+        <!-- 入院初日 -->
+        <div>
+          <div class="aspect-video rounded-2xl overflow-hidden bg-gray-100 shadow-md">
+            <iframe src="https://www.youtube.com/embed/7WOx4w3V66Q" title="入院初日" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <p class="text-warm-700 mt-3 font-medium">入院初日（3/15）</p>
+          <p class="text-gray-500 text-sm">IMHAと診断され、ICU（酸素室）に入りました。</p>
+        </div>
+
+        <!-- 入院二日目 -->
+        <div>
+          <div class="aspect-video rounded-2xl overflow-hidden bg-gray-100 shadow-md">
+            <iframe src="https://www.youtube.com/embed/TbVg9jPklzs" title="入院二日目の朝、元気がない" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <p class="text-warm-700 mt-3 font-medium">入院二日目の朝（3/16）</p>
+          <p class="text-gray-500 text-sm">PCVが7.9%まで急落。呼びかけに目は開けるものの、立ち上がれない状態に。</p>
+        </div>
+
+        <!-- 酸素を吸いながら移動 -->
+        <div>
+          <div class="aspect-video rounded-2xl overflow-hidden bg-gray-100 shadow-md">
+            <iframe src="https://www.youtube.com/embed/HbDyZzy-tzQ" title="新しい病院へ移動、酸素を吸いながら" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <p class="text-warm-700 mt-3 font-medium">新しい病院への移動</p>
+          <p class="text-gray-500 text-sm">酸素の袋を口に当てながら、家族の車で転院しました。</p>
+        </div>
+
+        <!-- 輸血後 -->
+        <div class="bg-green-50 rounded-2xl p-4 md:p-6">
+          <div class="aspect-[9/16] max-w-sm mx-auto rounded-2xl overflow-hidden bg-gray-100 shadow-md">
+            <iframe src="https://www.youtube.com/embed/DF7Yedy5amo" title="輸血後、元気が出てきた" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+          </div>
+          <p class="text-green-800 mt-3 font-bold text-center text-lg">輸血後、元気が出てきた</p>
+          <p class="text-green-700 text-sm text-center">輸血のおかげで立ち上がれるようになりました。輸血は確かに効果があります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 5. お願い（ドナーについて） -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-24 bg-red-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-black text-center mb-4 text-red-800">お力を貸してください</h2>
+      <p class="text-center text-red-700 mb-12 text-lg leading-relaxed">
+        輸血で命をつなぐためのドナー犬を探しています
+      </p>
+
+      <!-- ドナーの条件 -->
+      <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 mb-6">
+        <h3 class="text-xl font-bold text-warm-800 mb-6 text-center">ドナーの対象となるワンちゃん</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="flex items-center gap-3 bg-warm-50 rounded-xl p-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-warm-400 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <p class="font-bold text-warm-800 text-lg">大型犬</p>
+          </div>
+          <div class="flex items-center gap-3 bg-warm-50 rounded-xl p-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-warm-400 rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <p class="font-bold text-warm-800 text-lg">8歳以下</p>
+          </div>
+        </div>
+        <p class="text-center text-warm-700 leading-relaxed">
+          この2つに当てはまるワンちゃんがいたら、<br class="hidden md:inline">
+          <span class="font-bold">まずはご連絡いただけますと大変ありがたいです。</span>
+        </p>
+        <div class="text-center mt-6">
+          <a href="#contact" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-colors">
+            連絡をする
+          </a>
+        </div>
+      </div>
+
+      <!-- 血液型について -->
+      <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 mb-6">
+        <h3 class="text-lg font-bold text-warm-800 mb-3">血液型について</h3>
+        <p class="text-gray-700 leading-relaxed mb-3">
+          ワンちゃんにも血液型があり、適合する型（DEA 1.1 マイナス）が必要です。全犬種の約30%程度がこの型に該当します。
+        </p>
+        <p class="text-blue-800 bg-blue-50 border border-blue-100 rounded-xl p-4 leading-relaxed">
+          ほとんどの飼い主さんはご存知ないと思いますが、かかりつけの動物病院で簡単に調べられます。
+        </p>
+      </div>
+
+      <!-- 謝礼について -->
+      <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 mb-6">
+        <h3 class="text-lg font-bold text-warm-800 mb-3">謝礼・交通費について</h3>
+        <p class="text-gray-700 leading-relaxed">
+          ご協力いただける方には、<span class="font-bold">謝礼をお渡しさせていただきます。</span>交通費やタクシー代ももちろん全額負担いたします。ご自宅への送迎も可能です。どうかお力をお貸しください。
+        </p>
+      </div>
+
+      <!-- 輸血のリスクについて -->
+      <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 mb-6">
+        <h3 class="text-lg font-bold text-warm-800 mb-3">輸血のリスクについて</h3>
+        <p class="text-gray-700 leading-relaxed">
+          輸血の際に鎮静剤を使いますが、人間が胃カメラで鎮静剤を使うのと同程度のリスクです。
+        </p>
+      </div>
+
+      <!-- シェアのお願い -->
+      <div class="bg-amber-50 border-2 border-amber-200 rounded-2xl p-6 text-center">
+        <p class="text-lg font-bold text-amber-900 mb-2">大型犬を飼っていなくても</p>
+        <p class="text-amber-800">
+          このページをシェアしていただけるだけでも大きな力になります。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 6. 検査・輸血の流れ -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-black text-center mb-4 text-warm-800">ご協力の流れ</h2>
+      <p class="text-center text-warm-600 mb-12 text-lg">ご連絡いただいてから、丁寧にご案内いたします</p>
+
+      <div class="space-y-6">
+        <!-- Step 1 -->
+        <div class="flex gap-4 md:gap-6">
+          <div class="flex-shrink-0">
+            <div class="w-12 h-12 bg-warm-400 rounded-full flex items-center justify-center">
+              <span class="text-white font-black text-lg">1</span>
+            </div>
+          </div>
+          <div class="flex-1 bg-warm-50 rounded-2xl p-5">
+            <h3 class="font-bold text-warm-800 text-lg mb-1">ご連絡</h3>
+            <p class="text-gray-600">下記の連絡先からお気軽にご連絡ください</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex gap-4 md:gap-6">
+          <div class="flex-shrink-0">
+            <div class="w-12 h-12 bg-warm-400 rounded-full flex items-center justify-center">
+              <span class="text-white font-black text-lg">2</span>
+            </div>
+          </div>
+          <div class="flex-1 bg-warm-50 rounded-2xl p-5">
+            <h3 class="font-bold text-warm-800 text-lg mb-1">血液型の検査</h3>
+            <p class="text-gray-600">ご予定に合わせて、お近くの動物病院で簡易検査していただくか、東京都文京区白山の病院で検査できます</p>
+            <p class="text-gray-600 mt-1">検査費用はもちろん全てこちらで負担いたします。</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex gap-4 md:gap-6">
+          <div class="flex-shrink-0">
+            <div class="w-12 h-12 bg-warm-400 rounded-full flex items-center justify-center">
+              <span class="text-white font-black text-lg">3</span>
+            </div>
+          </div>
+          <div class="flex-1 bg-warm-50 rounded-2xl p-5">
+            <h3 class="font-bold text-warm-800 text-lg mb-1">型が合えば、病院で輸血</h3>
+            <div class="bg-white rounded-xl p-4 border border-warm-200 mt-3">
+              <p class="font-bold text-warm-800 mb-1">ライフメイト動物医療センター文京</p>
+              <p class="text-sm text-gray-500 mb-2">（旧ER文京）東京都文京区白山付近</p>
+              <a href="https://maps.app.goo.gl/CGUX66ktWn6W9gkq6?g_st=ic" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 text-sm font-medium">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                Google Mapで見る
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 7. 連絡先セクション -->
+  <!-- ============================================ -->
+  <section id="contact" class="py-16 md:py-24 bg-warm-100">
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-black text-center mb-4 text-warm-800">ご連絡先</h2>
+      <p class="text-center text-warm-600 mb-10 text-lg">どの方法でもお気軽にご連絡ください</p>
+
+      <div class="space-y-6">
+        <!-- LINE -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 text-center">
+          <div class="inline-flex items-center gap-2 bg-green-500 text-white font-bold px-4 py-2 rounded-full mb-4">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"></path></svg>
+            LINE
+          </div>
+          <a href="https://line.me/ti/p/rOfWtTg_OT" target="_blank" rel="noopener" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow transition-colors mb-4">
+            友だち追加する
+          </a>
+          <p class="text-gray-500 text-sm mb-4">笹谷 拓</p>
+          <details class="text-left">
+            <summary class="text-sm text-gray-400 cursor-pointer text-center">QRコードで追加する場合はこちら</summary>
+            <div class="max-w-[180px] mx-auto mt-3">
+              <img src="連絡先情報/LINE(笹谷拓).JPG" alt="LINE QRコード" class="w-full rounded-xl">
+            </div>
+          </details>
+        </div>
+
+        <!-- 電話 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8">
+          <div class="text-center mb-4">
+            <div class="inline-flex items-center gap-2 bg-blue-500 text-white font-bold px-4 py-2 rounded-full">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              お電話
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between bg-warm-50 rounded-xl p-4">
+              <div>
+                <p class="font-bold text-warm-800">笹谷 靖（父）</p>
+              </div>
+              <a href="tel:08056775810" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-sm transition-colors">
+                080-5677-5810
+              </a>
+            </div>
+            <div class="flex items-center justify-between bg-warm-50 rounded-xl p-4">
+              <div>
+                <p class="font-bold text-warm-800">笹谷 拓（息子）</p>
+                <p class="text-xs text-gray-500">繋がらなかったらこちらへ</p>
+              </div>
+              <a href="tel:08056875810" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-sm transition-colors">
+                080-5687-5810
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- メール -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 text-center">
+          <div class="inline-flex items-center gap-2 bg-gray-600 text-white font-bold px-4 py-2 rounded-full mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            メール
+          </div>
+          <a href="mailto:h.s.298355@gmail.com" class="text-blue-600 hover:text-blue-800 text-lg font-medium break-all">
+            h.s.298355@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-warm-800 text-warm-200 py-8 pb-24 md:pb-8">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <p class="text-sm leading-relaxed">
+        このページは、ティーちゃんの輸血ドナーを探すために家族が作成しました。<br>
+        ご覧いただきありがとうございます。少しでも多くの方に届きますように。
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
